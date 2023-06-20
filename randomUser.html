@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Data Load</title>
+  <style>
+    body {
+      padding: 20px;
+      background-color: cadetblue;
+      margin-bottom: 10%;
+    }
+
+    .btn-box {
+      width: 75%;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .container {
+      width: 75%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      /* text-align: center; */
+
+    }
+
+    .btn {
+      color: blue;
+      font-size: 1rem;
+      font-weight: 900;
+      background-color: chocolate;
+      padding: 10px 15px;
+      border: 0;
+      border-radius: 5px;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 class="title">If You Want Random Female And Male Details</h1>
+    <div class="btn-box"><button class="btn" onclick="userFemale(),userMale()">Details Refresh</button></div>
+    <section class="container">
+      <div>
+        <h2>Female</h2>
+        <h3> <img id="profile"></img></h3>
+        <h3>Name : <span id="name"> </span></h3>
+        <h3>Email : <span id="email"> </span></h3>
+        <h3>Number : <span id="number"> </span></h3>
+        <h3>Gender : <span id="gender"> </span></h3>
+        <h3>location : <span id="location"> </span> </h3>
+      </div>
+      <div>
+        <h2>Male</h2>
+        <h3> <img id="M_profile"></img></h3>
+        <h3>Name : <span id="M_name"> </span></h3>
+        <h3>Email : <span id="M_email"> </span></h3>
+        <h3>Number : <span id="M_number"> </span></h3>
+        <h3>Gender : <span id="M_gender"> </span></h3>
+        <h3>location : <span id="M_location"> </span> </h3>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/randomUser.js"></script>
+</body>
+
+</html>
